@@ -27,10 +27,10 @@ This is a simple REST API for managing users and notes built using **FastAPI**. 
 
 User Routes:
 
--POST /user/signup - Register a new user.
--POST /user/login - Login and obtain an authentication token.
+- POST /user/signup - Register a new user.
+- POST /user/login - Login and obtain an authentication token.
 Notes Routes:
--POST /notes - Create a new note (requires authentication).
--GET /notes - Retrieve all notes (requires authentication).
--PUT /notes - Update an existing note (requires authentication).
--DELETE /notes/{note_id} - Delete a note (requires authentication).
+- POST /notes - Create a new note (requires authentication).
+- GET /notes - Retrieve all notes (requires authentication).
+- PUT /notes - Update an existing note (requires authentication).
+- DELETE /notes/{note_id} - Delete a note (requires authentication).
