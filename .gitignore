@@ -1,0 +1,30 @@
+
+*.pyc
+*.pyo
+__pycache__/
+
+venv/
+env/
+# *.env
+
+*.log
+*.sqlite3
+
+# .env
+
+.idea/
+.vscode/
+
+
+*.sql
+
+.DS_Store
+Thumbs.db
+
+
+*.coverage
+*.tox
+*.nox
+*.coverage.*
+*.hypothesis/
+*.pytest_cache/
