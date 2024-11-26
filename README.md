@@ -71,7 +71,7 @@ This is a simple REST API for managing users and notes built using **FastAPI**. 
   DB_HOST=localhost
   DB_USER=root
   DB_PASSWORD=yourpassword
-  DB_DATABASE=dbname
+  DB_DATABASE=db_name
   DB_PORT=3306
   ```
 
