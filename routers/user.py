@@ -13,6 +13,7 @@ class UserRouter:
         self.router.post("/login", summary="Authenticate user and generate token")(self.login)
 
     def signup(self, signup_data: SignupRequest):
+        
         """
         Register a new user.
         """
@@ -33,7 +34,7 @@ class UserRouter:
             raise HTTPException(status_code=401, detail="Invalid email or password")
         
         access_token = Authentication.create_access_token(data={"sub": user["user_id"]})
-        return {"access_token": access_token, "token_type": "bearer"}
+        return {"access_token": access_token, "token_type": "bearer","username": user["user_name"]}
 
 
 user_router = UserRouter().router

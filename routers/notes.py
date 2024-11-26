@@ -33,8 +33,8 @@ class NotesRouter:
         """
         current_user = Authentication.get_current_user(token)
         notes = NotesModel.get_notes_by_user(current_user["user_id"])
-        if not notes:
-            raise HTTPException(status_code=404, detail="No notes found")
+        # if not notes:
+        #     raise HTTPException(status_code=404, detail="No notes found")
         return {"notes": notes}
 
     def edit_note(
